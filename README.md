@@ -1,12 +1,62 @@
-# React + Vite
+# Maquetación con React y Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una maquetación creada con React y Vite, que muestra una serie de cuadros de colores dispuestos en una estructura específica.
 
-Currently, two official plugins are available:
+## Estructura del proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La estructura del proyecto es la siguiente:
+src/
+├── components/
+│   ├── Layout/
+│   │   ├── Layout.jsx
+│   │   └── Layout.css
+│   ├── ColorBox/
+│   │   └── ColorBox.jsx
+├── App.jsx
+├── main.jsx
+├── index.css
 
-## Expanding the ESLint configuration
+* `components/Layout/Layout.jsx`: Contiene el componente principal que organiza los cuadros de colores.
+* `components/Layout/Layout.css`: Contiene los estilos CSS para la maquetación.
+* `components/ColorBox/ColorBox.jsx`: Componente genérico para crear cuadros de colores.
+* `App.jsx`: Componente principal de la aplicación.
+* `main.jsx`: Punto de entrada de la aplicación.
+* `index.css`: Estilos globales.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Cómo ejecutar el proyecto
+
+1.  Clona el repositorio:
+
+    ```bash
+    git clone <URL_DEL_REPOSITORIO>
+    ```
+
+2.  Navega a la carpeta del proyecto:
+
+    ```bash
+    cd maquetacion-colores
+    ```
+
+3.  Instala las dependencias:
+
+    ```bash
+    npm install
+    ```
+
+4.  Ejecuta la aplicación:
+
+    ```bash
+    npm run dev
+    ```
+
+5.  Abre el navegador en `http://localhost:5173/`.
+
+## Ajustes
+
+* Para ajustar el margen entre los cuadros, modifica la propiedad `margin` en el selector `.color-box` en `src/components/Layout/Layout.css`.
+* Para ajustar los colores o tamaños de los cuadros, modifica los estilos correspondientes en `src/components/Layout/Layout.css`.
+* Para que la maquetación ocupe toda la pantalla, se usan unidades relativas y se ajusta la lógica de los tamaños en el archivo `src/components/Layout/Layout.css`.
+
+## Autor
+
+* [Marvin Garcia]
