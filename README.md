@@ -28,7 +28,7 @@ src/
 1.  Clona el repositorio:
 
     ```bash
-    git clone <URL_DEL_REPOSITORIO>
+    git clone https://github.com/Mar-Vin1926/Maquetacion-Marvin.git
     ```
 
 2.  Navega a la carpeta del proyecto:
